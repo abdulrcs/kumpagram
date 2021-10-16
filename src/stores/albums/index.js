@@ -4,7 +4,7 @@ const albums = {
   state: [],
   reducers: {
     addAlbums(state, payload) {
-      return [...state, payload]
+      return payload
     },
   },
   effects: dispatch => ({

@@ -16,7 +16,7 @@ const reducers = {
   addPost(state, payload) {
     return {
       ...state,
-      posts: [...state.posts, payload],
+      posts: [payload, ...state.posts],
     }
   },
 

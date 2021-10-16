@@ -4,7 +4,7 @@ const users = {
   state: [],
   reducers: {
     addUsers(state, payload) {
-      return [...state, payload]
+      return payload
     },
   },
   effects: dispatch => ({

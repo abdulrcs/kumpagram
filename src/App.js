@@ -1,13 +1,14 @@
-import { ChakraProvider, theme } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import React from 'react'
 import { Provider } from 'react-redux'
 import AppRoute from 'routes'
 import store from 'stores'
+import theme from 'theme'
 
 function App() {
   return (
     <Provider store={store}>
-      <ChakraProvider theme={theme}>
+      <ChakraProvider resetCSS theme={theme}>
         <AppRoute />
       </ChakraProvider>
     </Provider>
